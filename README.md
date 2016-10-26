@@ -11,8 +11,8 @@ Lightwight Docker image for the (latest) PHP-FPM and Nginx to run WordPress base
   * [PHP](http://pkgs.alpinelinux.org/package/main/x86/php) 7.0.8
   * [Nginx](http://pkgs.alpinelinux.org/package/main/x86/nginx) 1.10.1
   * Memory usage is around 50mb on a simple install.
-  
-  
+
+
 ## A simple example
 ### Say you want to run a single site on a VPS with Docker
 
@@ -24,8 +24,8 @@ sudo docker run -e VIRTUAL_HOST=etopian.com,www.etopian.com -v /data/sites/etopi
 
 ```
 The following user and group id are used, the files should be set to this:
-User ID: 
-Group ID: 
+User ID:
+Group ID:
 
 ```bash
 chown -R 100:101 /data/sites/etopian.com/htdocs
@@ -47,8 +47,8 @@ sudo docker run -e VIRTUAL_HOST=etopian.net,www.etopian.net -v /data/sites/etopi
 Populate /data/sites/etopian.com/htdocs and  /data/sites/etopian.net/htdocs with your WP files. See http://www.dockerwordpress.com if you need help on how to configure your database.
 
 The following user and group id are used, the files should be set to this:
-User ID: 
-Group ID: 
+User ID:
+Group ID:
 
 ```bash
 chown -R 100:101 /data/sites/etopian.com/htdocs
@@ -60,7 +60,7 @@ chown -R 100:101 /data/sites/etopian.com/htdocs
 
 * `htdocs`: Webroot
 * `logs`: Nginx/PHP error logs
-* 
+*
 
 ### WP-CLI
 
